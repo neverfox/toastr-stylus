@@ -1,5 +1,5 @@
 {
-  "name": "toastr",
+  "name": "toastr-stylus",
   "filename": "js/toastr.min.js",
   "version": "2.0.1",
   "description": "ToastrJS is a JavaScript library for Gnome / Growl type non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.",
@@ -9,16 +9,17 @@
     "ToastrJS",
     "toastr.js"
   ],
-  "maintainers": [
-    {
-      "name": "John Papa",
-      "web": "http://www.johnpapa.net",
-      "twitter": "@john_papa"
-    }
+  "author": {
+    "name": "John Papa",
+    "web": "http://www.johnpapa.net",
+    "twitter": "@john_papa"
+  },
+  "contributors": [
+    "neverfox <github.to.soma@neverbox.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/CodeSeven/toastr.git"
+    "url": "git://github.com/CodeSeven/toastr-stylus.git"
   },
   "bugs": "http://stackoverflow.com/questions/tagged/toastr",
   "licenses": [
@@ -28,9 +29,10 @@
     }
   ],
   "devDependencies": {
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-less": "~0.6.4",
-    "grunt-contrib-qunit": "~0.2.2"
+    "grunt": "^0.4.4",
+    "grunt-contrib-uglify": "^0.2.2",
+    "grunt-contrib-qunit": "^0.2.2",
+    "grunt-contrib-stylus": "^0.14.0"
   },
   "scripts": {
     "test": "grunt"
