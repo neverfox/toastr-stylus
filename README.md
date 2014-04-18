@@ -4,6 +4,11 @@
 ## Current Version
 2.0.1
 
+## Stylus changes
+- Split into multiple files (e.g variables, mixins, responsive etc.)
+- Uses nib to handle mixins and vendor prefixes, so may lack some support for older browsers
+- Version numbers are to be kept in sync with the original toastr by using semver build metadata, e.g. `2.0.1+stylus.0.1.0`.
+
 ## Demo
 - Demo can be found at http://codeseven.github.io/toastr/demo.html
 - [Demo using FontAwesome icons with toastr](http://plnkr.co/edit/6W9URNyyp2ItO4aUWzBB?p=preview)

@@ -1,17 +1,17 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    less: {
+    stylus: {
       dev: {
+        options: {
+          compress: false
+        },
         files: {
-          "toastr.css": "toastr.less"
+          "toastr.css": "stylus/toastr.styl"
         }
       },
       prod: {
-        options: {
-          yuicompress: true
-        },
         files: {
-          "toastr.min.css": "toastr.less"
+          "toastr.min.css": "stylus/toastr.styl"
         }
       }
     },
@@ -28,9 +28,9 @@ module.exports = function(grunt) {
 	}
   });
 
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-qunit');
 
-  grunt.registerTask('default', ['less', 'qunit', 'uglify']);
+  grunt.registerTask('default', ['stylus', 'qunit', 'uglify']);
 };
