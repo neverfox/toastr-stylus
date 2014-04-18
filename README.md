@@ -5,7 +5,7 @@
 2.0.1
 
 ## Stylus changes
-- Split into multiple files (e.g variables, mixins, responsive etc.)
+- Split into multiple files (e.g. variables, mixins, responsive etc.)
 - Uses nib to handle mixins and vendor prefixes, so may lack some support for older browsers
 - Version numbers are to be kept in sync with the original toastr by using semver pre-release versioning, anticipating the next official version, e.g. `2.0.2-0.1.0`.
 
@@ -28,7 +28,7 @@ Toastr is hosted at CDN JS
 http://nuget.org/packages/toastr
 
 ## [Bower](http://bower.io/)
-		bower install toastr
+		bower install toastr-stylus
 
 
 ## Wiki and Change Log
